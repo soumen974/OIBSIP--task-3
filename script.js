@@ -6,8 +6,7 @@ function convertTemperature() {
 
     let result;
     if (fromUnit === toUnit) {
-        result = temperature;
-        resultElement.textContent = `${temperature} ${toUnit} is ${result} ${toUnit}`;
+        resultElement.textContent = `${temperature} ${toUnit} [you are converting for same units ${toUnit} ]  `;
     } else if (fromUnit === "celsius" && toUnit === "fahrenheit") {
         result = (temperature * 9/5) + 32;
         resultElement.textContent = `${temperature} °C is ${result} °F`;
